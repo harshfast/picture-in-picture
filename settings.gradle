@@ -1,0 +1,2 @@
+include ':app', ':common', ':repository', ':localdatastore'
+rootProject.name='Android Template Project'

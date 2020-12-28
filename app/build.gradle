@@ -13,6 +13,10 @@ android {
         versionCode versions.application.version_code
         versionName versions.application.version_name
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //Flag to enable/disable PIP feature
+        buildConfigField "boolean", "FEATURE_PIP_ENABLED", "true"
+
     }
     buildTypes {
         release {
@@ -24,10 +28,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation "androidx.appcompat:appcompat:$versions.android.appcompat"
     implementation "androidx.constraintlayout:constraintlayout:$versions.android.constraint_layout"
-    implementation "androidx.navigation:navigation-fragment-ktx:$versions.android.navigation"
-    implementation "androidx.navigation:navigation-ui-ktx:$versions.android.navigation"
     implementation project(':common')
     implementation project(':repository')
 }

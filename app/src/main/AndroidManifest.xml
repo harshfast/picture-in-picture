@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.harsh.pip.MainActivity">
+
+
+        <activity
+            android:name=".MyPipActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:resizeableActivity="true"
+            android:autoRemoveFromRecents="true"
+            android:supportsPictureInPicture="true"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:taskAffinity=".MyPipActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_my_pip" />
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

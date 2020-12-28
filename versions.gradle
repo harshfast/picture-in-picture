@@ -6,7 +6,7 @@ ext {
     versions = [
 
             application: [
-                    package_name: "com.harsh.atp",
+                    package_name: "com.harsh.pip",
                     version_code: 100,
                     version_name: "1.0.0"
             ],

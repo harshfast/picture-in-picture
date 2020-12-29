@@ -16,9 +16,7 @@
         app:title="My PIP Activity"
         android:backgroundTint="@color/colorAccent"
         app:titleTextColor="@android:color/white"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        android:elevation="4dp" />
 
 
     <WebView

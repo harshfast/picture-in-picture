@@ -20,8 +20,7 @@ class MyPipActivity : PipActivity() {
         }
 
         val webview = findViewById<WebView>(R.id.webview_pip_mode)
-        webview.isScrollContainer = false
-        webview.loadUrl("file:///android_asset/anim_pip.gif")
+        webview.loadUrl("file:///android_asset/anim_pip8.gif")
 
     }
 

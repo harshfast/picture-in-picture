@@ -117,7 +117,7 @@ abstract class PipActivity : AppCompatActivity() {
          * Use this broadcast action to finish PIP mode when it is not needed.
          * For example - When user clicks on app icon while PIP window is running.
          */
-        val ACTION_FINISH_PIP_MODE = "ACTION_FINISH_PIP_MODE"
+        const val ACTION_FINISH_PIP_MODE = "ACTION_FINISH_PIP_MODE"
     }
 
 }
